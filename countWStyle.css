@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'istok_reg';
+    src: url('Font/istokweb-regular-webfont.woff2') format('woff2'),
+         url('Font/istokweb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'istok_bold';
+    src: url('Font/istokweb-bold-webfont.woff2') format('woff2'),
+         url('Font/istokweb-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'istok_bolditalic';
+    src: url('Font/istokweb-bolditalic-webfont.woff2') format('woff2'),
+         url('Font/istokweb-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'istok_italic';
+    src: url('Font/istokweb-italic-webfont.woff2') format('woff2'),
+         url('Font/istokweb-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
+iframe {
+  margin: 0;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  min-width: 300px;
+  flex-grow: 2;
+  color: white;
+  font-size: 0.88rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: istok_reg;
+  font-size: 0.9rem;
+  height: 100%;
+  background-color: rgba(65,75,101, 1);
+  color: rgba(255, 255, 240, 1);
+}
+
+td {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgba(209, 154, 102, 1);
+}
+
+#cap {
+  font-family: istok_bold;
+}
+
+#idText {
+  background-color: lightgray;
+}
+
