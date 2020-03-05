@@ -7,7 +7,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 Find the sum of all the multiples of 3 or 5 below 1000. */
 
-function test(n){
+function multiplesOfThreeAndFive(n){
     //emtpy array to store result from the for loop.
     let arr = []
     //this for loop will iterate trhough the n and find whether the number multiplies by 3 or 5 using the modulus operator (%). If i can be devided between 3 or 5 (=== 0), then it will get pushed to arr.
@@ -21,4 +21,4 @@ function test(n){
     })
     console.log(sum)
 }
-test(100)
+multiplesOfThreeAndFive(100)
