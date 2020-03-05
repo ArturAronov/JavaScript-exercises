@@ -1,4 +1,4 @@
-function test(n){
+function multiplesOfThreeAndFive(n){
     let arr = []
     for (let i=1; i<n; i++) {
         if (i%3 === 0) {arr.push(i)}
@@ -9,4 +9,4 @@ function test(n){
     })
     return sum;
 }
-test(100)
+multiplesOfThreeAndFive(100)
