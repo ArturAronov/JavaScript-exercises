@@ -1,3 +1,6 @@
+//Testcase: 123
+//Result: 12
+
 var numberOfSteps  = function(num) {
     let arr = [];
     let i=0;
