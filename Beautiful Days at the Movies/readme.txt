@@ -44,5 +44,5 @@ Step1.4: Joins the two strings together (from "1","2" to "12")
 4.1 Substracts i - reverse(i);
 4.2 Divides subtraction result with k;
 4.3 Ensures the number is an absolute value (not a negative integer) with Math.abs();
-5. Check if the value iterated in previous line is integer, if true, store the number in variable resul;
+5. Check if the value iterated in previous line is integer, if true, store the number in variable result;
 6. Return the length of result array.
