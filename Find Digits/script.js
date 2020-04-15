@@ -4,10 +4,9 @@
 function findDigits(n) {
     let count=0;
     let d=n.toString().split('');
-    console.log(d)
     for (let i=0; i<d.length; i++) {
         if(n%d[i]===0) {
-            count++
+            count++;
         }
     }
     return count;
