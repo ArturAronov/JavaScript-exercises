@@ -38,11 +38,11 @@ Step1.1: Converts number to string (from ie 21 to "21");
 Step1.2: Splits the string (from "21" to "2" and "1");
 Step1.3: Reverses two strings (from "2","1" to "1","2");
 Step1.4: Joins the two strings together (from "1","2" to "12")
-2. Create empty array where results iterated in the loop will be stored;
-3. Crete a while loop with starting position of i and stopping position of j;
-4. Create variable (let value), that will:
-4.1 Substracts i - reverse(i);
-4.2 Divides subtraction result with k;
-4.3 Ensures the number is an absolute value (not a negative integer) with Math.abs();
-5. Check if the value iterated in previous line is integer, if true, store the number in variable result;
-6. Return the length of result array.
+Step2: Create empty array where results iterated in the loop will be stored;
+Step3: Crete a while loop with starting position of i and stopping position of j;
+Step4: Create variable (let value), that will:
+Step4.1: Substracts i - reverse(i);
+Step4.2: Divides subtraction result with k;
+Step4.3: Ensures the number is an absolute value (not a negative integer) with Math.abs();
+Step5: Check if the value iterated in previous line is integer, if true, store the number in variable result;
+Step6: Return the length of result array.
