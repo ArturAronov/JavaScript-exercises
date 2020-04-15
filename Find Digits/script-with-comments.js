@@ -11,7 +11,7 @@ function findDigits(n) {
         //Within the loop, iterate over each element in d and to determine if division reminder is zero (n%d[i]: 1012%1, 1021%0, 1012%1, 1012%2);
         if(n%d[i]===0) {
             //If n%d[i] === 0, count gets incremented by 1;
-            count++
+            count++;
         }
     }
     return count;
