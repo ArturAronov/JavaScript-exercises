@@ -22,20 +22,12 @@ For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 
 #### My Solution:
 
-Step1: Create empty emtpy array (```result```);
-
-Step2: Create for-loop that iterates over ```nums[i]```;
-
-Step2.1: Create variable ```counter``` that stores number 0. This will get incremented by one every time that ```nums[j]<nums[i]```;
-
-Step3: Create another for-loop that iterates over ```nums[j]```;
-
-Step3.1: Within it, compare if ```nums[j]``` is smaller than ```nums[i]```;
-
-Step3.2: Shoud the ```if``` result in ```true```, increment ```counter``` by 1;
-
-Step3: Push number stored in ```counter``` into ```result```;
-
-Step4: Reset ```counter``` back to 0;
-
-Step5: Return array ```result```.
+Step1: Create empty emtpy array (```result```);  
+Step2: Create for-loop that iterates over ```nums[i]```;  
+Step2.1: Create variable ```counter``` that stores number 0. This will get incremented by one every time that ```nums[j]<nums[i]```;  
+Step3: Create another for-loop that iterates over ```nums[j]```;  
+Step3.1: Within it, compare if ```nums[j]``` is smaller than ```nums[i]```;  
+Step3.2: Shoud the ```if``` result in ```true```, increment ```counter``` by 1;  
+Step3: Push number stored in ```counter``` into ```result```;  
+Step4: Reset ```counter``` back to 0;  
+Step5: Return array ```result```.  
