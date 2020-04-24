@@ -23,8 +23,8 @@ On index 5 (0-based) we have 3 vs 4 so we have to move this student.
 ```
 
 ### My Solution:
-Step1: Create target array that copies ```heights``` and sorts it into decreasing order. In order to execute that, we need to use ```concat()``` method so that the original array wouldn't get mutated. Once the array is concatenated, we have to use ```sort((a,b)=>a-b)``` method. The purporse of ```(a,b)=>a-b``` is to ensure that array is in ascending order. Without it array ```[1,2,7,8,10,11]``` will return ```[1,10,11,2,7,8]```;  
-Step2: Create variable ```counter``` that gets incremented each time we have variance in both arrays;  
-Step3: Declare for-loop with starting position 0 (```i=0```), stopping possition length of the heights (```i<heights.length```) and get incremented by 1 (```i++```);  
-Step4: Create ``if`` statement that compares two arrays. Should there be a difference at given possition of ```i```, the ```counter``` will be incremented by 1 (```counter++```);
-Step5: return results from ```counter```.
+* Step1: Create target array that copies ```heights``` and sorts it into increasing order. In order to execute that, we need to use ```concat()``` method so that the original array wouldn't get mutated. Once the array is concatenated, we have to use ```sort((a,b)=>a-b)``` method. The purporse of ```(a,b)=>a-b``` is to ensure that array is in ascending order. Without it array ```[1,2,7,8,10,11]``` will return ```[1,10,11,2,7,8]```;  
+* Step2: Create variable ```counter``` that gets incremented each time we have variance in both arrays;  
+* Step3: Declare for-loop with starting position 0 (```i=0```), stopping possition length of the heights (```i<heights.length```) and get incremented by 1 (```i++```);  
+* Step4: Create ``if`` statement that compares two arrays. Should there be a difference at given possition of ```i```, the ```counter``` will be incremented by 1 (```counter++```);
+* Step5: return results from ```counter```.
