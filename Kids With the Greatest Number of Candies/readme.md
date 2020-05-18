@@ -28,7 +28,7 @@ Step1: Determine the largest amount of candiest a kid holds and hold the value i
 Step2: Create an empty array where the result will be stored in variable ```result```;  
 Step3: Create a for-loop with starting position 0 (```i=0```), run-time the length of the array (```i<candies.length```), gets incremented by one (```i++```);  
 Step4: Push boolean into ```result``` that checks if kids' candies + extra candies are larger / equal to maximum amount of what one kid holds;  
-Step5: Return result;    
+Step5: Return ```result```;    
   
   
   
