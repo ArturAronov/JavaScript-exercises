@@ -8,6 +8,7 @@ Given the array ```candies``` and the integer ```extraCandies```, where ```candi
 For each kid check if there is a way to distribute ```extraCandies``` among the kids such that he or she can have the **greatest** number of candies among them. Notice that multiple kids can have the **greatest** number of candies.
   
   
+  
 ### Example 1:
 ```
 Input: candies = [2,3,5,1,3], extraCandies = 3  
@@ -21,12 +22,14 @@ Kid 5 has 3 candies and if he or she receives at least 2 extra candies will have
 ```
   
   
+  
 ### My Solution:
 Step1: Determine the largest amount of candiest a kid holds and hold the value in variable ```max```;
 Step2: Create an empty array where the result will be stored in variable ```result```;
 Step3: Create a for-loop with starting position 0 (```i=0```), run-time the length of the array (```i<candies.length```), gets incremented by one (```i++```);
 Step4: Push boolean into ```result``` that checks if kids' candies + extra candies are larger / equal to maximum amount of what one kid holds.
 Step5: Return result;  
+  
   
   
 ```
