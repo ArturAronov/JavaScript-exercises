@@ -35,6 +35,7 @@ Step5: Return reduced rows ```reuturn rows.reduce(reducer)```.
 ```
 //Test-case: 13;
 //Result: 91;
+
 function triangle(n) {
     let rows = [];
     let reducer = (a,b) => a+b;
