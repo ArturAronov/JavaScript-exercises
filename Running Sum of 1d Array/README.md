@@ -39,8 +39,10 @@ var runningSum = function(nums) {
 **Step3**: Within the loop, push into ```result``` array sum of the digits starting from arr[0] until arr[i+1]. For that, use non-mutating method Array.slice(startIndex, endIndex), as array is zero-indexed, set startIndex to 0 and since end index extact up to but not including, increment i with 1 ```i+1``` as the end value (```arr.slice(0,i+1)```). Use reduce method after slice to sum all of the values.  
 **Step4**: return result.  
   
-#### Code in focus:
+### Code in focus:
+```
 //Test-case: [ 6, 4, 7, 4, 9 ]
+```
 ```
 let result = [6];
 for (let i=0; i<5; i++) {
