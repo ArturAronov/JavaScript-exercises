@@ -10,13 +10,14 @@ Return the sum of the numbers from index ```left``` to ```index``` right (indexe
 
 ### Example 1:
 ```
-**Input**: nums = [1,2,3,4], n = 4, left = 1, right = 5
+Input: nums = [1,2,3,4], n = 4, left = 1, right = 5
 Output: 13 
 Explanation: All subarray sums are 1, 3, 6, 10, 2, 5, 9, 3, 7, 4. After sorting them in non-decreasing order we have the new array [1, 2, 3, 3, 4, 5, 6, 7, 9, 10]. The sum of the numbers from index le = 1 to ri = 5 is 1 + 2 + 3 + 3 + 4 = 13. 
 ```
 
 
-### My Solution:  
+### My Solution:
+**Note:** This is the first Medium level leetCode solution that I have ever solved, mainly by millions of trial and errors. In the hindsight, comparing to solutions solved by other contestants, one could easily describe my solution almost as ugly as Michael Jackson's nose job - it invovles multiple loops **and** a recursion, of which latter seems to be unnecessary.
 ```
 var rangeSum = function(nums, n, left, right) {
   let arr=[];
