@@ -55,4 +55,4 @@ var rangeSum = function(nums, n, left, right) {
 **Step8**: Call function rec within itself with parameter of n-1: ```rec(n--)```.  
 **Step9**: Sort ```arr``` in non-decreasing order: ```arr.sort((a,b)=>a-b)```.  
 **Step10**: Create empty array ```sum``` where the sum values will be separated from ```arr``` according to ```left``` and ```right``` indexes given in parameters. Note that as indexes start from one and starting value in loops is 0, the resulting code becomes: ```i=left-1; i<right```.  
-**Step11**: Return the sum value of array ```sum``` by using reduce() method: (```return sum.reduce((a,b)=>a+b)```).  
+**Step11**: Return the sum value of array ```sum``` by using reduce() method: ```return sum.reduce((a,b)=>a+b)```.  
