@@ -50,9 +50,9 @@ var processQueries = function(queries, m) {
         p.splice(j,1);
         p.splice(0,0,num);
         break;
-      }
-    }
-  }
+      };
+    };
+  };
   return indexes;
 };
 ```
