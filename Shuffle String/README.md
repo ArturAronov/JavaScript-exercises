@@ -5,7 +5,7 @@
 **Brief**:  
 Given a string ```s``` and an integer array ```indices``` of the **same length**.  
 The string ```s``` will be shuffled such that the character at the ```ith``` position moves to ```indices[i]``` in the shuffled string.  
-Return the __shuffled string__.  
+Return the _shuffled string_.  
 
 
 ### Example 1:
@@ -30,5 +30,13 @@ Output: "arigatou"
 ```
 
 ### My Solution:
-**Step1**:  
-**Step2**:  
+```
+var restoreString = function(s, indices) {
+  let result=[];
+  for (let i in indices) result[indices[i]]=s[i];
+  return result.join('');
+};
+```
+**Step1**: Create an empty array that stores the values interated in the loop below.  
+**Step2**: Create a for in loop that iterates over ```s``` and ```indices```.  
+**Step3**: Move letter in ```s[i]``` from ```indices[i]``` into ```result``` in the right order.  
