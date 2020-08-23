@@ -6,7 +6,7 @@
 Given an integer ```n```, add a dot (".") as the thousands separator and return it in string format.  
 
 
-### Example 1:
+### Example:
 ```
 Input: n = 123456789
 Output: "123.456.789"
