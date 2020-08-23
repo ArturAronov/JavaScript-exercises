@@ -19,8 +19,8 @@ var thousandSeparator = function(n) {
   const arr=n.toString().split('').reverse();
   return arr.map((x,index)=>{
     if(index%3===0&&index!==0) x+='.'
-    return x
-  }).reverse().join('')
+    return x;
+  }).reverse().join('');
 };
 ```
 **Step1**: Since decimal point in thousands is grouping 3 numbers from the end of the integer, I've created a new array that converts number to a string, splits into individual number and reverses it.    
