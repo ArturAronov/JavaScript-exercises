@@ -19,5 +19,28 @@ Notice that element mat[1][1] = 5 is counted only once.
 
 
 ### My Solution:
+```
+var diagonalSum = function(mat) {
+  const left=mat.length+1;
+  const right=mat.length-1;
+  const merged=[].concat.apply([], mat);
+  return merged.filter((current, index)=>{
+    if (index%left===0 || index%right===0) return current
+  }).reduce((a,b)=>a+b);
+};
+```
+Test-case: mat=[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]
+mat.length=4
+[1,1,1,1]
+[1,1,1,1]
+[1,1,1,1]
+[1,1,1,1]
+
+
+If you merge all of the array together, you need to find numbers from following indexes:  
+[0, 1, 2, 3,
+ 4, 5, 6, 7,
+ 8, 9, 10,11
+ 12,13,14,15]
 **Step1**:  
 **Step2**:  
