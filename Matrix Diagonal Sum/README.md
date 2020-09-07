@@ -31,10 +31,10 @@ var diagonalSum = function(mat) {
 ```
 Test-case: mat=[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]  
 mat.length=4  
-[**1**,1,1,**1**]  
-[1,**1**,**1**,1]  
-[1,**1**,**1**,1]  
-[**1**,1,1,**1**]  
+[**1**, 1, 1, **1**]  
+[1, **1**, **1**, 1]  
+[1, **1**, **1**, 1]  
+[**1**, 1, 1, **1**]  
 
 **Step1**:  
 If you merge all of the array together, you need to find numbers from following indexes:  
