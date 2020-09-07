@@ -31,17 +31,24 @@ var diagonalSum = function(mat) {
 ```
 Test-case: mat=[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]  
 mat.length=4  
-[1,1,1,1]  
-[1,1,1,1]  
-[1,1,1,1]  
-[1,1,1,1]  
+[**1**,1,1,**1**]  
+[1,**1**,**1**,1]  
+[1,**1**,**1**,1]  
+[**1**,1,1,**1**]  
 
-
-If you merge all of the array together, you need to find numbers from following indexes:  
-[0, 1, 2, 3,  
- 4, 5, 6, 7,  
- 8, 9, 10,11  
- 12,13,14,15]  
-   
 **Step1**:  
+If you merge all of the array together, you need to find numbers from following indexes:  
+[**0**, 1, 2, **3**,  
+ 4, **5**, **6**, 7,  
+ 8, **9**, **10**,11  
+ **12**,13,14,**15**]  
+  
 **Step2**:  
+Leftmost diagonal idexes are all modulo of 5 (5, 10, 15), which is const left=mat.length+1 &  
+rightmost diagonal idexes are modulo of 3 (3, 6, 9, 12), which is const right=mat.length-1  
+  
+**Step3**:  
+As for next stop, the array needs to be merged together with const merged=[].concat.apply([], mat);   
+  
+**Step4**:  
+For the final two steps, return filter on merged with parameters of current and index. Inside filter, set conditional statement that validates if index is modulo of left or right. If true, the current gets retured. Once the filter is done iterating, reduce array to get sum of values retrieved in the merged.filter().
