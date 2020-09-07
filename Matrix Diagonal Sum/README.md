@@ -29,18 +29,19 @@ var diagonalSum = function(mat) {
   }).reduce((a,b)=>a+b);
 };
 ```
-Test-case: mat=[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]
-mat.length=4
-[1,1,1,1]
-[1,1,1,1]
-[1,1,1,1]
-[1,1,1,1]
+Test-case: mat=[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]  
+mat.length=4  
+[1,1,1,1]  
+[1,1,1,1]  
+[1,1,1,1]  
+[1,1,1,1]  
 
 
 If you merge all of the array together, you need to find numbers from following indexes:  
-[0, 1, 2, 3,
- 4, 5, 6, 7,
- 8, 9, 10,11
- 12,13,14,15]
+[0, 1, 2, 3,  
+ 4, 5, 6, 7,  
+ 8, 9, 10,11  
+ 12,13,14,15]  
+   
 **Step1**:  
 **Step2**:  
