@@ -29,6 +29,12 @@ var diagonalSum = function(mat) {
   }).reduce((a,b)=>a+b);
 };
 ```
+### Bench-marks: 
+Run-time: 76ms  
+Memory: 38.8MB  
+  
+ 
+### Explanation
 Test-case: mat=[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]  
 mat.length=4  
 [**1**, 1, 1, **1**]  
