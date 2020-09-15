@@ -31,7 +31,8 @@ var removeVowels = function(S) {
 };
 ```
 **Step1**: Create empty string ```result```  
-**Step2**: Create for-loop with if condition that checks if ```S[i]``` is not a vowel. If not, it gets added to result string with ```result+=S[i]```  
+**Step2**: Create for-loop with if condition that checks if ```S[i]``` is not a vowel. If not, it gets added to result string with ```result+=S[i]```   
+**Step3**: Return ```result```
 
 ### My Solution 2:
 #### Runtime: 68ms, Memory: 36.5MB
