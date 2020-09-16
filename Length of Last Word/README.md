@@ -28,7 +28,7 @@ var lengthOfLastWord = function(s) {
   };
 };
 ```
-**Test-case**: ```"Hello Beautiful  World"``` *(notice the extra space betwen Beautiful and World)*  
+**Test-case**: ```"Hello Beautiful   World"``` *(notice the extra space betwen Beautiful and World)*  
 **Step1**: Declare variable ```cost arr``` that splits ```s``` string into individual words with ```s.split(' ')```. Notice the space between apostrophes. Instead of splitting string into individual letters (such as   ['H', 'e', 'l', 'l', 'o',' ', 'B', 'e', 'a', 'u','t', 'i', 'f', 'u', 'l',' ',' ', 'W', 'o', 'r', 'l','d'] with no space between aphostrophes - ```split('')```) we need an array with full words, which is achieved with ```s.split(' ')```, which results ['Hello', 'Beautiful', '', 'World'].  
 **Step2**: For next step filter through the ```arr``` that takes parameter ```current``` and checks (with the conditional statement) if the length of the string is bigger than 0, if true, return it. This is important to eliminate any additional empty spaces. The new value of ```arr``` becomes ['Hello', 'Beautiful', 'World'].    
 **Step3**: Create conditional statement that checks if ```arr``` is holding less than one items, if true, the return value is 0. If ```arr``` is holding more than one values, the ```else``` condition return the length of last item with ```return arr[arr.length-1].length```.
